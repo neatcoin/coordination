@@ -1,0 +1,63 @@
+#+title: Neatcoin core developer workbook
+
+This is a workbook documenting plans and what is actually happening in
+Neatcoin development. The workbook is maintained as a =org= document
+so that it works as an actual task list.
+
+The workbook is currently maintained by =sorpaas=.
+
+* Chain maintenance
+
+** Substrate maintenance
+
+*** TODO Monthly Substrate upstream update (November 2021)
+Update Substrate dependencies to the newest commit, as of
+November 2021.
+
+- [ ] Submit pin update PR.
+- [ ] Check migrations needed to add and remove.
+- [ ] Release node v1.3.
+- [ ] Local testing.
+- [ ] WebAssembly binary submission.
+- [ ] Exchange and explorer coordination.
+
+** Documentation
+
+No specific documentation task in work at this moment.
+
+** Testnet
+
+No specific testnet task in work at this moment.
+
+* Common pallet libraries
+
+The common pallet libraries =rust-blockchain/pallets= are things that
+are shared between Kulupu and Neatcoin.
+
+** TODO Migration scripts for =pallet-variables=
+Neatcoin's =pallet-variables= is already from
+=rust-blockchain/pallets=. However, Kulupu currently uses an older
+version of it which requires migration scripts to update.
+
+* Actor-based smart contract
+
+The runtime WebAssembly interface in Substrate is deprecated. This
+actually makes actor-based smart contract slightly simpler as
+previously if we use that runtime interface, we would lack an
+important memory API. Now, it is expected that everyone will have to
+use the interpreter instead.
+
+The current work in actor-based still focuses on design.
+
+* Massive BABE
+
+By separating validator set of BABE and GRANDPA, we can significantly
+increase the number of validators we can support in the system, as
+bottlenecks are only on GRANDPA. The major work to do here is
+modifications of the runtime staking pallet.
+
+* Enactment of the DNS system
+
+Neatcoin contains the necessary runtime of the DNS system, it just
+hasn't been enabled. We need to first enable it on testnet to make
+sure everything is working alright, and then switch it on in mainnet.

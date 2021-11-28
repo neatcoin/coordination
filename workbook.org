@@ -67,11 +67,6 @@ use the interpreter instead.
 
 The current work in actor-based still focuses on design.
 
-** Current open questions
-
-*** Actor scheduler
-
-
 * Massive BABE
 
 By separating validator set of BABE and GRANDPA, we can significantly

@@ -6,6 +6,24 @@ so that it works as an actual task list.
 
 The workbook is currently maintained by =sorpaas=.
 
+* Timeline
+Those are tentative timelines related to on-chain events.
+
+** Referendum schedule
+Tentative schedule of on-chain referendum process for Neatcoin, if no
+other higher priority proposals from the community are tabled.
+
+- Activation of =.neatuser= TLD for first-come-first-served
+  distribution. ([2021-12-04 Sat] to [2021-12-11 Sat])
+- Enable common ICANN TLDs =.com=, =.net=, =.org= on
+  Neatcoin. ([2021-12-11 Sat] to [2021-12-18 Sat])
+- Neatcoin runtime upgrade: benchmarking and weight information update
+  for Nomo-related pallets. ([2021-12-18 Sat] to [2021-12-25 Sat])
+- Enable the full list of ICANN TLDs. (Not yet scheduled)
+- Neatcoin runtime upgrade: update Substrate upstream to Polkadot
+  v0.9.12. (Not yet scheduled)
+- Neatcoin runtime upgrade: auction functionality for Nomo. (Not yet
+  scheduled)
 * Chain maintenance
 
 ** Substrate maintenance
@@ -48,6 +66,11 @@ important memory API. Now, it is expected that everyone will have to
 use the interpreter instead.
 
 The current work in actor-based still focuses on design.
+
+** Current open questions
+
+*** Actor scheduler
+
 
 * Massive BABE
 

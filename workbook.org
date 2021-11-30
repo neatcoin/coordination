@@ -24,6 +24,8 @@ other higher priority proposals from the community are tabled.
   v0.9.12. (Not yet scheduled)
 - Neatcoin runtime upgrade: auction functionality for Nomo. (Not yet
   scheduled)
+- Increase validator count: the current safe target is 37. (Not yet
+  scheduled)
 * Chain maintenance
 
 ** Substrate maintenance

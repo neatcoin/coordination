@@ -41,6 +41,12 @@ November 2021.
 - [ ] WebAssembly binary submission.
 - [ ] Exchange and explorer coordination.
 
+** Security
+
+*** TODO Update Substrate to include fixes for #10403
+The relevant Substrate PR is [[https://github.com/paritytech/substrate/pull/10403][here]]. The impact is classified as low for
+Neatcoin.
+
 ** Documentation
 
 No specific documentation task in work at this moment.
@@ -48,6 +54,16 @@ No specific documentation task in work at this moment.
 ** Testnet
 
 No specific testnet task in work at this moment.
+
+* Wallet
+
+** TODO Zone management
+The wallet now has basic registration flow for FCFS, but we still need
+to get an interface for DNS zone management.
+
+** TODO Atomic swap interface
+The runtime has built-in atomic swap functionality. We need to build
+an UI so that users can use it easily.
 
 * Common pallet libraries
 
